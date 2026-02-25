@@ -472,6 +472,60 @@ footer a {
   background-color: #f5f5f5;
   font-weight: bold;
 }
+
+	/* Wrapper automático para tabelas grandes */
+.table-responsive,
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Estilo base para todas as tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 100%;
+}
+
+/* Evita quebra feia em mobile */
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* Cabeçalho padrão */
+table thead th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+/* Zebra (opcional, melhora leitura) */
+table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Links dentro das tabelas */
+table a {
+  color: #0066cc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+table a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile: garante scroll horizontal */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
 	
 </style>
 
