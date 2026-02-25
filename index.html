@@ -424,6 +424,30 @@ footer a {
 .casino-table a:hover {
   text-decoration: underline;
 }
+
+	.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.comparison-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
 	
 </style>
 
@@ -892,42 +916,46 @@ function showPopup() {
 
 <p>Abaixo, uma compara&ccedil;&atilde;o pr&aacute;tica entre a Bet e plataformas mais antigas do mercado:</p>
 
-<table>
-	<thead>
-		<tr>
-			<th>Crit&eacute;rio</th>
-			<th>Bet</th>
-			<th>Casas tradicionais</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Interface</td>
-			<td>Moderna e limpa</td>
-			<td>Muitas vezes polu&iacute;da</td>
-		</tr>
-		<tr>
-			<td>Mobile</td>
-			<td>Totalmente otimizado</td>
-			<td>Nem sempre fluido</td>
-		</tr>
-		<tr>
-			<td>Pagamentos</td>
-			<td>Pix r&aacute;pido</td>
-			<td>Pode variar</td>
-		</tr>
-		<tr>
-			<td>Jogos de cassino</td>
-			<td>Cat&aacute;logo atualizado</td>
-			<td>Cat&aacute;logo irregular</td>
-		</tr>
-		<tr>
-			<td>Inova&ccedil;&atilde;o</td>
-			<td>Alta</td>
-			<td>M&eacute;dia</td>
-		</tr>
-	</tbody>
-</table>
+
+		<div class="table-responsive">
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Critério</th>
+        <th>Bet</th>
+        <th>Casas tradicionais</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Interface</td>
+        <td>Moderna e limpa</td>
+        <td>Muitas vezes poluída</td>
+      </tr>
+      <tr>
+        <td>Mobile</td>
+        <td>Totalmente otimizado</td>
+        <td>Nem sempre fluido</td>
+      </tr>
+      <tr>
+        <td>Pagamentos</td>
+        <td>Pix rápido</td>
+        <td>Pode variar</td>
+      </tr>
+      <tr>
+        <td>Jogos de cassino</td>
+        <td>Catálogo atualizado</td>
+        <td>Catálogo irregular</td>
+      </tr>
+      <tr>
+        <td>Inovação</td>
+        <td>Alta</td>
+        <td>Média</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+		
 
 <p>Essa compara&ccedil;&atilde;o ajuda a entender por que a Bet vem sendo vista como uma alternativa real &agrave;s <strong>melhores casas de apostas</strong> do Brasil.</p>
 
