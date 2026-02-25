@@ -448,6 +448,30 @@ footer a {
   background-color: #f5f5f5;
   font-weight: bold;
 }
+
+	.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 420px;
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.comparison-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
 	
 </style>
 
@@ -864,29 +888,32 @@ function showPopup() {
 
 <h3>Exemplo de funcionamento dos pagamentos</h3>
 
-<table>
-	<thead>
-		<tr>
-			<th>Opera&ccedil;&atilde;o</th>
-			<th>Tempo m&eacute;dio</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Dep&oacute;sito via Pix</td>
-			<td>Instant&acirc;neo</td>
-		</tr>
-		<tr>
-			<td>Solicita&ccedil;&atilde;o de saque</td>
-			<td>Minutos</td>
-		</tr>
-		<tr>
-			<td>Processamento</td>
-			<td>R&aacute;pido</td>
-		</tr>
-	</tbody>
-</table>
+<div class="table-responsive">
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Operação</th>
+        <th>Tempo médio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Depósito via Pix</td>
+        <td>Instantâneo</td>
+      </tr>
+      <tr>
+        <td>Solicitação de saque</td>
+        <td>Minutos</td>
+      </tr>
+      <tr>
+        <td>Processamento</td>
+        <td>Rápido</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
+		
 <hr />
 <h2>Bet como plataforma nova: vantagem ou risco?</h2>
 
