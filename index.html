@@ -631,6 +631,57 @@ table a:hover {
     overflow-x: auto;
   }
 }
+
+	/* Scroll suave nativo */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo do índice */
+.indice-conteudo {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 8px;
+}
+
+.indice-conteudo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.indice-conteudo li {
+  margin-bottom: 10px;
+}
+
+/* Links com animação */
+.indice-conteudo a {
+  color: #0066cc;
+  text-decoration: none;
+  position: relative;
+  padding-left: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Bullet animado */
+.indice-conteudo a::before {
+  content: "➜";
+  position: absolute;
+  left: 0;
+  opacity: 0.4;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.indice-conteudo a:hover {
+  color: #000;
+}
+
+.indice-conteudo a:hover::before {
+  transform: translateX(4px);
+  opacity: 1;
+}
 	
 </style>
 
@@ -639,6 +690,9 @@ function showPopup() {
     alert("Este conteúdo é destinado apenas para maiores de 18 anos.");
 }
 </script>
+
+
+	
 
 </head>
 <body>
